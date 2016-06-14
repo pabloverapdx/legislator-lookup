@@ -7,6 +7,13 @@ export default Ember.Component.extend({
         zip: this.get('zip')
       };
       this.sendAction('zipLookup', params);
+    },
+    chamberLookup() {
+      var chamber = {
+        chamber: this.get('chamber')
+      };
+
+      this.sendAction('chamberLookup', chamber);
+      }
     }
-  }
-});
+  });

@@ -5,6 +5,13 @@
     <label for="zip">Zip</label>
     {{input value=zip id="zip"}}
   </div>
-
   <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
+</form>
+<br>
+<form>
+  <div class="form-group">
+    <label for="committee">Committees</label>
+    {{input value=chamber id=chamber placeholder="Type Joint, House or Senate"}}
+  </div>
+  <button class="btn btn-primary" {{action 'chamberLookup'}}>Submit</button>
 </form>

@@ -1,7 +1,17 @@
+List of legislators:
 <ul>
   {{#each model as |legislator|}}
-    <li> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}
+    <li> <a href= {{legislator.first_name}} {{legislator.last_name}}>{{legislator.first_name}} {{legislator.last_name}}</a>
+      <br>
+      Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}
+       Chamber: {{legislator.chamber}}
         gender: {{legislator.gender}}
     </a></li>
+  {{/each}}
+</ul>
+List of committees.
+<ul>
+  {{#each model as |committee|}}
+  <li>{{committee.chamber}}</li>
   {{/each}}
 </ul>
